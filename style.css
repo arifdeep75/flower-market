@@ -16,7 +16,7 @@
 body {
   font-family: "Noto Serif", serif;
   background-color: #f9fbfd;
-  color: #1e1e1e;
+  color: rgba(37, 36, 50, 1);
   padding: 20px;
 }
 
@@ -41,7 +41,7 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #1e1e1e;
+  color: rgba(37, 36, 50, 1);
   font-weight: 500;
 }
 
@@ -51,4 +51,78 @@ body {
 
 .cart {
   font-weight: bold;
+}
+
+/* Banner Section */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.banner-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.banner-text h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: rgba(233, 90, 8, 1);
+}
+
+.banner-text p {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+}
+
+.banner-image {
+  flex: 1;
+  text-align: right;
+}
+
+.banner-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    justify-content: space-between;
+    /* width: 100%; */
+  }
+
+  .link.desktop {
+    display: none; 
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .banner-text {
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .banner-image {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .banner-image img {
+    max-width: 100%;
+    height: auto;
+  }
 }
