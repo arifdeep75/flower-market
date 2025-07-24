@@ -1,0 +1,54 @@
+.noto-serif-normal {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Serif", serif;
+  background-color: #f9fbfd;
+  color: #1e1e1e;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+
+.nav-links a {
+  text-decoration: none;
+  color: #1e1e1e;
+  font-weight: 500;
+}
+
+#light{
+    color: rgba(137, 135, 161, 1);
+}
+
+.cart {
+  font-weight: bold;
+}
